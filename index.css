@@ -1,0 +1,299 @@
+/********************************************************************** Brand | Settings | Start **********************************************************************/
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+:root {
+    
+    --background: White;
+    --color: rgb(10, 10, 10);
+
+    --accent: rgb(150, 150, 150);
+
+}
+
+/********************************************************************** Brand | Settings | End **********************************************************************/
+
+/********************************************************************** Brand | Footer | Start **********************************************************************/
+
+.Footer {
+
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    bottom: 0;
+    left: 0;
+
+    row-gap: 25px;
+    column-gap: 25px;
+
+    background: var(--color);
+    
+    position: absolute;
+
+}
+
+.Footer-Box-1 {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    row-gap: 15px;
+    column-gap: 15px;
+
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.Footer-Box-1 div {
+
+    width: fit-content;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+
+    flex-direction: column;
+
+    row-gap: 15px;
+    column-gap: 15px;
+
+}
+
+.Footer-Branding-Box {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.Footer-Branding-Box-Content h1 a {
+
+    font-size: 30px;
+    font-weight: 500;
+
+    color: var(--background);
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+}
+
+.Footer-Branding-Box-Content p {
+
+    font-size: 15px;
+    font-weight: 500;
+
+    color: var(--accent);
+
+}
+
+.Footer-Branding-Box-Social-Links {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+
+    row-gap: 15px;
+    column-gap: 15px;
+
+    list-style: none;
+
+}
+
+.Footer-Branding-Box-Social-Links li a {
+
+    padding: 6px 7px;
+
+    color: var(--color);
+
+    background: var(--background);
+    border-radius: 50%;
+
+    transition: transform 250s ease-in-out;
+
+}
+
+.Footer-Branding-Box-Social-Links li a:hover {
+
+    background: var(--color);
+    color: var(--background);
+
+}
+
+.Footer-Link-Boxes {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    flex-direction: column;
+
+}
+
+.Footer-Link-Boxes div h1 {
+
+    font-size: 25px;
+    font-weight: 500;
+
+    color: var(--background);
+
+}
+
+.Footer-Link-Boxes div ul {
+
+    list-style: none;
+
+}
+
+.Footer-Link-Boxes div ul li a {
+
+    font-size: 15px;
+    font-weight: 500;
+
+    color: var(--accent);
+
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+
+    transition: 250ms ease-in-out;
+
+    text-decoration: none;
+
+}
+
+.Footer-Link-Boxes div ul li a::after {
+
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--background);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in-out;
+
+}
+
+.Footer-Link-Boxes div ul li a:hover::after {
+
+    transform: scale(1);
+    transform-origin: left;
+
+}
+
+.Footer-Box-2 {
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+
+    text-align: center;
+
+    width: 100%;
+    
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-top: 1px solid var(--accent);
+
+}
+
+.Footer-Box-2 p {
+
+    font-size: 13.5px;
+    font-weight: 500;
+
+    color: var(--accent);
+
+    text-align: center;
+
+}
+
+/********************************************************************** Brand | Footer Media Queries | Start **********************************************************************/
+
+@media (max-width:2560px) {
+
+    /* SAME */
+
+}
+
+@media (max-width:1440px) {
+
+    /* SAME */
+
+}
+
+@media (max-width:1024px) {
+
+    /* SAME */
+
+}
+
+@media (max-width:768px) {
+
+    .Footer-Box-1 {
+    
+        flex-direction: column;
+
+        padding-left: 1cqi;
+        padding-right: 1cqi;
+        
+    }
+
+}
+
+@media (max-width:425px) {
+
+    /* SAME */
+
+}
+
+@media (max-width:375px) {
+
+    /* SAME */
+
+}
+
+@media (max-width:320px) {
+
+    /* SAME */
+
+}
+
+/********************************************************************** Brand | Footer Media Queries | End **********************************************************************/
+
+/********************************************************************** Brand | Footer | End **********************************************************************/
